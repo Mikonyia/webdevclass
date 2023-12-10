@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>pseudoclass css</title>
+    <style>
+      .container :first-child {
+        color: red;
+      }
+      .container :last-child {
+        text-decoration: line-through;
+      }
+      .container :nth-child(3) {
+        transform: rotateX(180deg);
+        column-rule-color: rgb(128, 0, 0);
+      }
+      .container :nth-child(odd) {
+        color: gold;
+      }
+
+      .list_wrapper :nth-child(even) {
+        list-style-type: lower-greek;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navlists">
+      <ol>
+        <li><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li><a href="#">three</a></li>
+        <li><a href="#">four</a></li>
+        <li><a href="#">five</a></li>
+      </ol>
+    </nav>
+
+    <div class="container">
+      <p>Lorem, ipsum dolor.</p>
+      <p>Lorem, ipsum dolor.</p>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+  </body>
+</html>

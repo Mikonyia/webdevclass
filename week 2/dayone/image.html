@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html image</title>
+  </head>
+  <body>
+    <img src="./nodejs.jpg" alt="dancer" />
+
+    <figure>
+      <img src="./window.jpg" alt="dancer" />
+      <caption>
+        photo by michael
+      </caption>
+    </figure>
+
+    <picture>
+      <source media="(max-width:500px)" srcset="./window.jpg" sizes="300" />
+
+      <img
+        src="./nodejs.jpg"
+        alt="node js image"
+        width="300px"
+        height="300px"
+      />
+      <br />
+    </picture>
+
+    <picture>
+      <source srcset="./window.jpg" media="(max-width:500px)" />
+    </picture>
+    <!-- <picture>
+      <source media="(max-width:500px)" srcset="./window.jpg" sizes="300" />
+
+      <img
+        src="./nodejs.jpg"
+        alt="node js image"
+        width="300px"
+        height="300px"
+      />
+      <br />
+    </picture> -->
+  </body>
+</html>
